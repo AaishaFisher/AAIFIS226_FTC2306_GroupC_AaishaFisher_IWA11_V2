@@ -29,13 +29,12 @@ status2.textContent = order2.getAttribute('data-delivered') === 'true' ? 'Delive
 
 //order3
 const order3 = order2.nextElementSibling
-const 3-biscuits: document(biscuits),
-const 3-donuts: document(donuts),
-const 3-pancakes: document(pancakes),
-const 3-status: document(status)
+const biscuits3 = order3.querySelector('.biscuits .count');
+const donuts3 = order3.querySelector('.donuts .count'); 
+const pancakes3 = order3.querySelector('.pancakes .count');
+const status3 = order3.querySelector('.status dd');
 
-
-3-biscuits= 3-root.biscuits,
-3-donuts = 3-root.donuts,
-3-pancakes = 3-root.pancakes,
-3-status = 3-root.status ? Delivered : Pending 
+biscuits3.textContent = order3.getAttribute('data-biscuits');
+donuts3.textContent = order3.getAttribute('data-donuts');
+pancakes3.textContent = order3.getAttribute('data-pancakes');
+status3.textContent = order3.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending'; 
