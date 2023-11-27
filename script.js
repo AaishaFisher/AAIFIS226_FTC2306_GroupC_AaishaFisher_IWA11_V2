@@ -16,18 +16,17 @@ const 2-donuts: document(donuts),
 const 2-pancakes: document(pancakes),
 const 2-status: document(status)
 
+2-biscuits= 2-root.biscuits,
+2-donuts = 2-root.donuts,
+2-pancakes = 2-root.pancakes,
+2-status = 2-root.status ? Delivered : Pending
+
 const 3-root = document(order3),
 const 3-biscuits: document(biscuits),
 const 3-donuts: document(donuts),
 const 3-pancakes: document(pancakes),
 const 3-status: document(status)
 
-
-
-2-biscuits= 2-root.biscuits,
-2-donuts = 2-root.donuts,
-2-pancakes = 2-root.pancakes,
-2-status = 2-root.status ? Delivered : Pending
 
 3-biscuits= 3-root.biscuits,
 3-donuts = 3-root.donuts,
