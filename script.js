@@ -16,18 +16,19 @@ status1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'Delive
  //order 2
 //store the fetched values in new variables 
 const order2 = order1.nextElementSibling; //catches next 'section' inside main section
-const bisuits2 = order2 2-biscuits: document(biscuits),
-const 2-donuts: document(donuts),
-const 2-pancakes: document(pancakes),
-const 2-status: document(status)
+const biscuits2 = order2.querySelector('.biscuits .count');
+const donuts2 = order2.querySelector('.donuts .count'); 
+const pancakes2 = order2.querySelector('.pancakes .count');
+const status2 = order2.querySelector('.status dd');
 
-//updating the content in order 2
-2-biscuits= 2-root.biscuits,
-2-donuts = 2-root.donuts,
-2-pancakes = 2-root.pancakes,
-2-status = 2-root.status ? Delivered : Pending
+//updating the content to be displayed in order 2
+biscuits2.textContent = order2.getAttribute('data-biscuits');
+donuts2.textContent = order2.getAttribute('data-donuts');
+pancakes2.textContent = order2.getAttribute('data-pancakes');
+status2.textContent = order2.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
-const 3-root = document(order3),
+//order3
+const order3 = order2.nextElementSibling
 const 3-biscuits: document(biscuits),
 const 3-donuts: document(donuts),
 const 3-pancakes: document(pancakes),
