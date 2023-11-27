@@ -1,13 +1,17 @@
+//Order 1
+
+//fetch the values and assign them into new variables
 const order1 = document.querySelector('section');
 const biscuitsOrder1=  order1.querySelector('.biscuits .count');
 const donutsOrder1 = order1.querySelector('.donuts .count');
 const pancakeOrder1 = order1.querySelector('.pancakes .count');
 const statusOrder1 = order1.querySelector('.status dd')
 
-1-biscuits= 1-root.biscuits,
-1-donuts = 1-root.donuts,
-1-pancakes = 1-root.pancakes,
-1-status = 1-root.status ? Delivered : Pending
+//replace and display above variables where needed
+biscuitsOrder1.textContent = order1.getAttribute('data-biscuits');
+donutsOrder1.textContent = order1.getAttribute('data-donuts');
+pancakeOrder1.textContent = order1.getAttribute('data-pancakes');
+order1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
 
 const 2-root = document(order2),
