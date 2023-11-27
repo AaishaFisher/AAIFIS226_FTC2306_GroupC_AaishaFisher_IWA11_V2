@@ -13,13 +13,15 @@ donutsOrder1.textContent = order1.getAttribute('data-donuts');
 pancakeOrder1.textContent = order1.getAttribute('data-pancakes');
 order1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
-
-const 2-root = document(order2),
+//order 2
+//store the fetched values in new variables 
+const order2 = order1.nextElementSibling; //catches next 'section' inside main section
 const 2-biscuits: document(biscuits),
 const 2-donuts: document(donuts),
 const 2-pancakes: document(pancakes),
 const 2-status: document(status)
 
+//updating the content in order 2
 2-biscuits= 2-root.biscuits,
 2-donuts = 2-root.donuts,
 2-pancakes = 2-root.pancakes,
