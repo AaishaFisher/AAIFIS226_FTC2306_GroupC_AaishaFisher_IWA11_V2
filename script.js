@@ -2,21 +2,21 @@
 
 //fetch the values and assign them into new variables
 const order1 = document.querySelector('section');
-const biscuitsOrder1=  order1.querySelector('.biscuits .count');
-const donutsOrder1 = order1.querySelector('.donuts .count');
-const pancakeOrder1 = order1.querySelector('.pancakes .count');
-const statusOrder1 = order1.querySelector('.status dd')
+const biscuits1=  order1.querySelector('.biscuits .count');
+const donuts1 = order1.querySelector('.donuts .count');
+const pancake1 = order1.querySelector('.pancakes .count');
+const status1 = order1.querySelector('.status dd')
 
 //replace and display above variables where needed
-biscuitsOrder1.textContent = order1.getAttribute('data-biscuits');
-donutsOrder1.textContent = order1.getAttribute('data-donuts');
-pancakeOrder1.textContent = order1.getAttribute('data-pancakes');
-statusOrder1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
+biscuits1.textContent = order1.getAttribute('data-biscuits');
+donuts1.textContent = order1.getAttribute('data-donuts');
+pancake1.textContent = order1.getAttribute('data-pancakes');
+status1.textContent = order1.getAttribute('data-delivered') === 'true' ? 'Delivered' : 'Pending';
 
-/* //order 2
+ //order 2
 //store the fetched values in new variables 
 const order2 = order1.nextElementSibling; //catches next 'section' inside main section
-const 2-biscuits: document(biscuits),
+const bisuits2 = order2 2-biscuits: document(biscuits),
 const 2-donuts: document(donuts),
 const 2-pancakes: document(pancakes),
 const 2-status: document(status)
@@ -37,4 +37,4 @@ const 3-status: document(status)
 3-biscuits= 3-root.biscuits,
 3-donuts = 3-root.donuts,
 3-pancakes = 3-root.pancakes,
-3-status = 3-root.status ? Delivered : Pending */
+3-status = 3-root.status ? Delivered : Pending 
